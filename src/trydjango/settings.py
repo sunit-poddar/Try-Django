@@ -45,6 +45,11 @@ INSTALLED_APPS = [
     'courses',
     'pages',
     'products',
+    'try_django_utils',
+    'manufacturers',
+    'vehicles',
+    'profiles',
+    'currency',
 ]
 
 MIDDLEWARE = [

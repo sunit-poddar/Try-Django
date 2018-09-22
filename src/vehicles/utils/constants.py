@@ -1,0 +1,9 @@
+VEHICLE_CAR = 'CAR'
+VEHICLE_TRUCK = 'TRK'
+VEHICLE_PLANE = 'PLN'
+
+VEHICLE_CHOICES = (
+    (VEHICLE_CAR, 'Car'),
+    (VEHICLE_TRUCK, 'Truck'),
+    (VEHICLE_PLANE, 'Airplane')
+)
