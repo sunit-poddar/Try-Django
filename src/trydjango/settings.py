@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # third party
     'simple_history',
+    'django_extensions',
 
     # own
     'blog',
