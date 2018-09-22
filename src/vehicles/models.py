@@ -19,12 +19,8 @@ class VehicleInformation(RowInformation):
     number_of_wheels = models.PositiveIntegerField()
     number_of_airbags = models.PositiveIntegerField()
     seating_capacity = models.PositiveIntegerField()
-    steering_type = models.CharField(max_length=200)
-    engine_type = models.CharField(max_length=200)
-    engine_power = models.CharField(max_length=200)
-    extras = models.TextField()
-    number_of_drivers = models.PositiveIntegerField()
     number_of_engines = models.PositiveIntegerField()
+    extras = models.TextField()
 
     def __str__(self):
         return "%s - %s - %s" % (self.name, self.type, self.manufacturer)

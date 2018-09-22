@@ -1,3 +1,5 @@
+from django.core.exceptions import ValidationError
+
 from currency.utils.constants import MODE_CREDIT
 
 
@@ -14,6 +16,9 @@ def manage_transactions_into_wallet(wallet_obj, transaction_obj):
     else:
         wallet_obj.total_spent += transaction_obj.amount
         wallet_obj.available_amount -= transaction_obj.amount
+
+    if wallet_obj.available_amount < 0:
+        raise ValidationError('Not enough money')
 
     wallet_obj.save()
 
